@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+<ul>
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+</ul>
+<script type="text/javascript">
+	alert($('li').map(function() {
+		return $(this).text();
+	}).get().join('|'));
+
+
+	// var rs = [] ;
+	// $('li').each(function(index,ele){
+	// 	rs.push($(ele).text());
+	// })
+	// alert(rs);
+</script>
+</body>
+</html>

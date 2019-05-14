@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// $('li').each(function(){
+			// 	alert($(this).text());
+			// });
+
+
+			$('li').each(function(index, element){
+				alert('index:'+index+ $(element).text());
+			});
+
+
+		});
+	</script>
+</head>
+<body>
+<ul>
+	<li>US</li>
+	<li>UK</li>
+	<li>VN</li>
+	<li>JS</li>
+	<li>TL</li>
+
+</ul>
+</body>
+</html>

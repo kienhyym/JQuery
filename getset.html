@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#bt1').click(function(){
+				$('label').text('da bi nhap');
+			});
+
+			$('#bt2').click(function(){
+				alert($('label').text());
+			})
+			$('#bt3').click(function(){
+				// $('label').css('color','red');
+			$('label').attr('style','color:red;');
+			$('input').val('123');
+			})
+
+
+			$('#bt4').click(function(){
+				$('#lunk').attr('href','http://google.com');
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<label>text=</label>
+	<input type="text" name="">
+	<a id="lunk" href="#">link</a>
+<button id="bt1">nhap</button>
+<button id="bt2">nhap nhap</button>
+<button id="bt3">color</button>
+<button id="bt4">link</button>
+
+</body>
+</html>

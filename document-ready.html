@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	
+	<!-- <script type="text/javascript">
+		$(window).load(function(){
+			$('#btn').click(function(){
+				alert('window');
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#btn').click(function(){
+				alert('ready');
+			});
+		});
+	</script> -->
+	<script type="text/javascript">
+		$(window).load(function(){
+			document.write("width:"+$('#image1').width()+".height:"+$('#image1').height());
+		})
+	</script>
+</head>
+<body>
+<!-- <button id="btn">click here</button> -->
+<img src="https://i.ytimg.com/vi/hF_LjTUvP-U/maxresdefault.jpg" id="image1">
+</body>
+</html>

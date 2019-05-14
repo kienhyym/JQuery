@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#bt1').click(function(){
+				var valCheck = $('[type="radio"]:checked');
+				console.log(valCheck);
+				if(valCheck){
+					$('#lb').text(valCheck.val() + "select");
+				}
+				else{
+					$('#lb').text("No check");
+				}
+
+			});
+
+
+
+			$('#bt2').on('click',function(){
+				var valCheckbox = $('[type="checkbox"]:checked');
+				console.log(aa);
+				if(valCheckbox.length >0){
+					$('#lb2').text(valCheckbox.length + "select");
+					valCheckbox.each(function(){
+					
+						$('#lb2').append($(this).val()+"<br>");
+					})
+					
+				}
+				else{
+					$('#lb2').text("No check");
+				}
+
+			});
+
+
+
+		});
+	</script>
+</head>
+<body>
+<input type="radio" name="eng" value="10">PHP
+<input type="radio" name="eng" value="20">JAVA
+<input type="radio" name="eng" value="30">JS
+<input type="radio" name="eng" value="40">C_+
+<button id="bt1">click</button>
+<label id="lb"></label>
+<br>
+
+<input type="checkbox" name="eng" value="VN">VN
+<input type="checkbox" name="eng" value="JP">JP
+<input type="checkbox" name="eng" value="Uk">UK
+<input type="checkbox" name="eng" value="US">US
+<button id="bt2">click</button>
+<label id="lb2"></label>
+</body>
+</html>

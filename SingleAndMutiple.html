@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<script src="https://code.jquery.com/jquery-latest.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#bt').click(function(){
+					var selecter = $('#sl option:selected');
+					if(selecter.length >0){
+						$('#lb').html('value:'+ selecter.val() + ".Text:"+selecter.text())
+					}	
+				})
+			})
+		</script>
+</head>
+<body>
+<select id="sl">
+	<option>Choose</option>
+	<option value="1:C#">C#</option>
+	<option value="2:C++">C++</option>
+	<option value="3:C+">C+</option>
+	<option value="4:C">C</option>
+</select>
+<button id="bt">nhap</button>
+<label id="lb"></label>
+</body>
+</html>

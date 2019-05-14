@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<style type="text/css">
+		.cssdemo{
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+<div class="demo" title="div1" style="color: yellow">
+<span title="span1">this 1</span>
+</div>
+<div>
+	<span class="demo" title="span2">this 2</span>
+</div>
+<div>
+	<span class="demo" title="span3">this 3</span>
+</div>
+<div>
+	<span class="demo" title="span4">this 4</span>
+</div>
+
+<script type="text/javascript">
+	$('[title="span3"]').addClass('cssdemo');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<style type="text/css">
+		.color{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1>aaaaaaaaa</h1>
+<button id="btadd">add</button>
+<button id="btremove">remove</button>
+<button id="bttog">togge</button>
+<script type="text/javascript">
+	$('#btadd').click(function(){
+		$('h1').addClass('color');
+	});
+	$('#btremove').click(function(){
+		$('h1').removeClass('color');
+	});
+	$('#bttog').click(function(){
+		$('h1').toggleClass('color');
+	})
+	
+</script>
+</body>
+</html>

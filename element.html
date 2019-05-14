@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			// alert($('table').text());
+			$('table').css('color','red');
+			$('table tr td').css('border','1px green solid');
+			$('#tb1').css('background-color','brown');
+		})
+	</script>
+</head>
+<body>
+
+
+<table id="tb1">
+	<tr>
+		<th>1</th>
+		<th>2</th>
+		<th>3</th>
+		<th>4</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+		<td>4</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+		<td>4</td>
+	</tr>
+</table>
+<br>
+<!-- <table>
+	<tr>
+		<th>1</th>
+		<th>2</th>
+		<th>3</th>
+		<th>4</th>
+	</tr>
+	<tr>
+		<th>1</th>
+		<th>2</th>
+		<th>3</th>
+		<th>4</th>
+	</tr>
+	<tr>
+		<th>1</th>
+		<th>2</th>
+		<th>3</th>
+		<th>4</th>
+	</tr>
+</table> -->
+
+<div>
+	<a href="#">link div</a>
+</div>
+<br>
+<a href="#"> link</a>
+
+
+
+
+
+<div class="big">
+<span class="small">this class1</span>	
+</div>
+
+<div class="small xsmall">
+<span>this class2</span>	
+</div>
+
+<div class="small">
+<span class="xsmall">this class3 </span>	
+</div>
+
+
+<script type="text/javascript">
+	$('#first .small').css('border','solid');
+	$('.small').filter('.xsmall').css('color','blue');
+</script>
+</body>
+</html>
