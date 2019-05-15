@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<script src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+	First Name <input type="text" name="" id="txtFirrst" class="inputRiquere"><br>
+	Last Name <input type="text" name="" id="txtLast" class="inputRiquere"><br>
+	City <select id="slCity" class="inputRiquere">
+		    <option>Select</option>
+			<option>VN</option>
+			<option>US</option>
+			<option>Uk</option>
+		</select><br>
+	Favoutite Color <input type="radio" name="myColor" class="RColor inputRiquere">Red 
+					<input type="radio" name="myColor" class="RColor inputRiquere">Green 
+					<input type="radio" name="myColor" class="RColor inputRiquere">Blue<br>
+	Contact Method  <input type="checkbox" name="contact" class="CContact inputRiquere">Email 
+					<input type="checkbox" name="contact" class="CContact inputRiquere">Phone  
+					<input type="checkbox" name="contact" class="CContact inputRiquere">Social Medial <br>
+	Comments <textarea id="idComment" class="inputRiquere"></textarea><br>
+	<button id="bt" class="inputRiquere">Submit</button>
+	<br>
+	<label id="lb">haha</label>				
+
+
+		<script type="text/javascript">
+		
+			$('#slCity').change(function () {
+			var value = $(this).val();
+			if(value == 'Select'){
+				$('#lb').html('choose one');
+			}
+			else{
+				$('#lb').html($(this).val());
+			}
+			});
+
+		</script>
+</body>
+</html>
